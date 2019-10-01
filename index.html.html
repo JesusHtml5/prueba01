@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>prac8-forms</title> 
+
+	<link rel='stylesheet' href='css/estilos.css' />
+	<link rel='stylesheet' href='css/PRAC8-forms.css' />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/PRAC8-forms.js"></script> 
+
+	<style></style>
+	<script></script>
+</head>
+
+<body>
+	<header>
+		<h1><!--<img src="imagenes/imagen1.jpg"   width="80" title="logo" alt="logo"/>-->web dinámica- JQ</h1>
+	</header>
+
+	<nav>	<a href="#">Inicio</a> <a href="#">Servicios</a> <a  href="#">Contacto</a> </nav>
+
+	<label for="colores">Al click del boton se activa el estilo fondo grisclaro y se queda el boton con estilo activo</label>
+	<input type="button" id="btn4" value="Estilo Inactivo" />	
+
+	<h2>DATOS </h2>
+		<p>Al click del dato se cambia de color el fondo</p>
+			<label for="nom">Nombre</label>
+			<input type="text" name="nom">
+			<label for="email">email</label>
+			<input type="text" name="email">
+
+		<h2>SELECCIONA1: ESTILO </h2>
+			<label for="colores">Selecciona tu ESTILO para el Resumen</label>
+			<select  name="colores">
+				<option value="white">Sin</option>
+				<option value="yellow">Amarillo</option>
+				<option value="red">Rojo</option>
+				<option value="blue">Azul</option>
+			 </select>
+			<label for="color">Resumen con color elegido</label>
+			<input type="text" id="color" name="color">
+ 
+	<h2>SELECCIONA2: PROMOCION </h2>
+		<label for="dtos">Selecciona promoción: 10%, 15% o 20%, se aplica al precio</label>
+		
+		<label for="precio">Precio</label>
+		<input type="text" id="precio" name="precio" value= "100">
+		
+		<select name="dtos" >
+			<option value="dto10" selected="selected">Promo 1 10%</option>
+			<option value="dto15">Promo 2 15%</option>
+			<option value="dto20">Promo 3 20%</option>
+		</select>
+ 
+		<label for="promo">Promo elegida</label>
+		<input type="text" id="promo" name="promo">
+		
+		<label for="total">Total con dto</label>
+		<input type="text" id="total" name="total">
+  
+<h2>SELECCIONA3: sección</h2> 
+   <label class="inline" for="seccion">Seccion 1</label>
+    <input type="radio" name="seccion" value="sec1"/>
+	
+	<label class="inline" for="seccion">Seccion 2</label>
+    <input type="radio" name="seccion" value="sec2"/>
+    
+  <label for="seccione">Sección elegida</label>
+  <input type="text" id="seccione" name="seccione">
+  
+  
+<h2>SELECCIONA4: FRECUENCIA DE ENVIOS </h2> 
+  <label class="inline" for="newsletter">Diario</label>
+    <input type="checkbox" name="newsletter1" value="Daily">
+	
+	<label class="inline" for="newsletter">Semana</label>
+    <input type="checkbox" name="newsletter2" value="Weekly">
+
+	 <label for="f">Frecuencia elegida</label>
+  <input type="text" id="f" name="f">
+	
+<footer >
+	<small>Web 2019</small>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
